@@ -32,7 +32,7 @@ int main() {
         if (tabuleiro[i][indexVertical] != 0) { // Valida se a posição já está ocupada
             printf("A posição (%d, %d) já foi ocupada\n",i, indexVertical);
             return 1; // Sai do programa com código de erro
-        } else if (i > 10 || i < 0) { // Valida se a posição está dentro dos limites do tabuleiro
+        } else if (i > 10 || i < 0 || indexVertical > 10 || indexVertical < 0) { // Valida se a posição está dentro dos limites do tabuleiro
                 printf("A posição (%d, %d) está fora dos limites do tabuleiro\n",i, indexVertical);
                 return 1; // Sai do programa com código de erro
             } else{
@@ -49,7 +49,7 @@ int main() {
         {
             printf("A posição (%d, %d) já foi ocupada\n",indexHorizontal, i); // Valida se a posição já está ocupada
             return 1; // Sai do programa com código de erro
-        } else if (i > 10 || i < 0) { // Valida se a posição está dentro dos limites do tabuleiro
+        } else if (i > 10 || i < 0 || indexHorizontal > 10 || indexHorizontal < 0) { // Valida se a posição está dentro dos limites do tabuleiro
                 printf("A posição (%d, %d) está fora dos limites do tabuleiro\n",indexHorizontal, i);
                 return 1; // Sai do programa com código de erro
             } else {
